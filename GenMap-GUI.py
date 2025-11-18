@@ -1,3 +1,4 @@
+% Copyright (c) 2025 National Research Council Canada
 import sys
 import os
 import pandas as pd
@@ -540,4 +541,5 @@ clicked1.trace('w',ch)
 clicked2.trace('w',ch2)
 
 w.mainloop()
+
 
