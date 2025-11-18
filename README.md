@@ -73,7 +73,7 @@ To generate a custom map with your own data, follow the **Installation** and **E
 
 ## Tool Overview  
 
-The following is a screenshot of the output .HTML file, along with markers that will explain what the options within the tool include. This is based on a sample file that was generated for Ontario and Alberta.
+The following is a screenshot of the output .HTML file, along with markers that will explain what the options within the tool include. This is based on a sample file that was generated for British Columbia and Alberta.
 
  ![Image 3](images/image_2.png) 
 - Interactive layers for altitude bands:  
