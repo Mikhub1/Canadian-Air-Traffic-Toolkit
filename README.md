@@ -85,10 +85,9 @@ The following is a screenshot of the output .HTML file, along with markers that 
 - Click any grid cell to view:  
   - Normalized Traffic Congestion  
   - Area (km²)  
-  - Density  
+  - Congestion  
   - Minimum & Maximum Altitude  
 
- ![Image 1](images/image_6.png)  
 ---
 
 ## Collaborators
