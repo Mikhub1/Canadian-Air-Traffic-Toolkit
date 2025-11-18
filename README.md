@@ -91,4 +91,11 @@ The following is a screenshot of the output .HTML file, along with markers that 
  ![Image 1](images/image_6.png)  
 ---
 
+## Collaborators
+
+![carleton](images/carleton.png)
+
+---
+
+![nrc](images/nrc-footer.png)
 
