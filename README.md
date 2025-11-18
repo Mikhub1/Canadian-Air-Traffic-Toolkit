@@ -29,7 +29,7 @@ To generate a custom map with your own data, follow the **Installation** and **E
 5. Create a working directory and place:  
    - The Python script (`GenMap-GUI.py`)  
    - Your `.csv` data file  
-   - Folder containing **ALL associated shapefiles**  
+   - Folder containing **ALL Shapefile**  
 6. Download the GitHub folder, unzip it, and open a terminal window.
 
 ### **Step 3: Install Dependencies**
