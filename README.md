@@ -1,7 +1,6 @@
 # Canadian Air Traffic Congestion Visualization Tool  
 ![Python](https://img.shields.io/badge/Python-3.11-blue.svg)  
-![License](https://img.shields.io/badge/license-MIT-green.svg)  
-![Status](https://img.shields.io/badge/status-active-success.svg)  
+
 
 ## Overview  
 This tool generates interactive HTML maps to visualize traffic congestion data across Canadian provinces and territories. It supports custom data input and provides multiple layers for airspace classes, types, and altitude bands.
