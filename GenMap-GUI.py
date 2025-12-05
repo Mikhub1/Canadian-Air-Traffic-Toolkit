@@ -309,23 +309,23 @@ def genmap(folder_path, shp_path,table,p1,p2):
      df6.crs = cl
 
      #add the popup to the data
-     pop1 = folium.GeoJsonPopup(fields=["congestion","Area","Normalized_","min_alt","max_alt"],
-                                aliases=["Normalized Traffic congestion (s/hrkm\u00b2):","Area (km\u00b2):","congestion (s/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
+     pop1 = folium.GeoJsonPopup(fields=["Density","Area","Normalized_","min_alt","max_alt"],
+                                aliases=["Normalized Traffic Density (fs/hrkm\u00b2):","Area (km\u00b2):","Density (fs/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
                                 localize=True,labels=True)
-     pop2 = folium.GeoJsonPopup(fields=["congestion","Area","Normalized_","min_alt","max_alt"],
-                                aliases=["Normalized Traffic congestion (s/hrkm\u00b2):","Area (km\u00b2):","congestion (s/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
+     pop2 = folium.GeoJsonPopup(fields=["Density","Area","Normalized_","min_alt","max_alt"],
+                                aliases=["Normalized Traffic Density (fs/hrkm\u00b2):","Area (km\u00b2):","Density (fs/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
                                 localize=True,labels=True)
-     pop3 = folium.GeoJsonPopup(fields=["congestion","Area","Normalized_","min_alt","max_alt"],
-                                aliases=["Normalized Traffic congestion (s/hrkm\u00b2):","Area (km\u00b2):","congestion (s/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
+     pop3 = folium.GeoJsonPopup(fields=["Density","Area","Normalized_","min_alt","max_alt"],
+                                aliases=["Normalized Traffic Density (fs/hrkm\u00b2):","Area (km\u00b2):","Density (fs/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
                                 localize=True,labels=True)
-     pop4 = folium.GeoJsonPopup(fields=["congestion","Area","Normalized_","min_alt","max_alt"],
-                                aliases=["Normalized Traffic congestion (s/hrkm\u00b2):","Area (km\u00b2):","congestion (s/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
+     pop4 = folium.GeoJsonPopup(fields=["Density","Area","Normalized_","min_alt","max_alt"],
+                                aliases=["Normalized Traffic Density (fs/hrkm\u00b2):","Area (km\u00b2):","Density (fs/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
                                 localize=True,labels=True)
-     pop5 = folium.GeoJsonPopup(fields=["congestion","Area","Normalized_","min_alt","max_alt"],
-                                aliases=["Normalized Traffic congestion (s/hrkm\u00b2):","Area (km\u00b2):","congestion (s/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
+     pop5 = folium.GeoJsonPopup(fields=["Density","Area","Normalized_","min_alt","max_alt"],
+                                aliases=["Normalized Traffic Density (fs/hrkm\u00b2):","Area (km\u00b2):","Density (fs/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
                                 localize=True,labels=True)
-     pop6 = folium.GeoJsonPopup(fields=["congestion","Area","Normalized_","min_alt","max_alt"],
-                                aliases=["Normalized Traffic congestion (s/hrkm\u00b2):","Area (km\u00b2):","congestion (s/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
+     pop6 = folium.GeoJsonPopup(fields=["Density","Area","Normalized_","min_alt","max_alt"],
+                                aliases=["Normalized Traffic Density (fs/hrkm\u00b2):","Area (km\u00b2):","Density (fs/hr):","Minimum Altitude (ft):","Maximum Altitude (ft):"],
                                 localize=True,labels=True)
 
      #define the colormap
@@ -342,10 +342,10 @@ def genmap(folder_path, shp_path,table,p1,p2):
      
      #define the color style for the individual shapefile layer
      def st_fun(feature):
-          congestion = feature["properties"]["congestion"]
+          density = feature["properties"]["Density"]
           
-          if congestion > 0:
-             percentile = 100*((math.log10(congestion)*0.18 + 0.65))
+          if density > 0:
+             percentile = 100*((math.log10(density)*0.18 + 0.65))
           else:
              percentile = 0
              
@@ -432,7 +432,7 @@ def genmap(folder_path, shp_path,table,p1,p2):
      ).add_to(m)
 
      #--------------------------------------------------------------------------------------------------------------------------------------
-     #folium.plugins.HeatMap(data = latlonden, name = "congestion",max_zoom = 1000, radius = 1, blur = 1,gradient = gradient_map).add_to(m_1)
+     #folium.plugins.HeatMap(data = latlonden, name = "Density",max_zoom = 1000, radius = 1, blur = 1,gradient = gradient_map).add_to(m_1)
      folium.LayerControl().add_to(m)
 
      colormap.add_to(m)
@@ -449,7 +449,7 @@ def genmap(folder_path, shp_path,table,p1,p2):
 #Initialize main window
 w = tk.Tk()
 w.geometry("1200x200")
-w.title("Traffic congestion Visualization Tool")
+w.title("Traffic Density Visualization Tool")
 l1 = Label(w,text = "Select Provinces and/or Territories to Visualize Data:")
 l1.place(x = 0, y = 95)
 
@@ -541,8 +541,4 @@ clicked1.trace('w',ch)
 clicked2.trace('w',ch2)
 
 w.mainloop()
-
-
-
-
 
