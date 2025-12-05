@@ -23,14 +23,14 @@ To generate a custom map with your own data, follow the **Installation** and **E
 3. During installation, **check the box to add python.exe to PATH**.
 
     ![Image 5](images/image_5.png) 
-5. Click **Install Now** (requires admin privileges).  
+4. Click **Install Now** (requires admin privileges).  
 
 ### **Step 2: Prepare Working Directory**
-5. Create a working directory and place:  
+
+5. Download the GitHub folder, unzip it, and open a terminal window.
+6. Create a working directory and place:  
    - The Python script (`GenMap-GUI.py`)  
-   - Your `.csv` data file  
    - Folder containing **ALL Shapefile**  
-6. Download the GitHub folder, unzip it, and open a terminal window.
 
 ### **Step 3: Install Dependencies**
 7. Navigate to your working directory:  
