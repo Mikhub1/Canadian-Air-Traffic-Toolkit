@@ -9,7 +9,7 @@ This tool generates interactive HTML maps to visualize traffic congestion data a
 
 ## Introduction  
 These files are used for generating the traffic congestion HTML file. The methodology is described in detail in the [public report](https://nrc-publications.canada.ca/eng/view/ft/?id=6262639a-6ad5-417a-861e-d98782811b42).  
-To generate a custom map with your own data, follow the **Installation** and **Execution** steps below.
+To generate a custom map, follow the **Installation** and **Execution** steps below.
 
 ---
 
