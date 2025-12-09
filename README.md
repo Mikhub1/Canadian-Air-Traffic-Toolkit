@@ -1,6 +1,7 @@
 # Canadian Air Traffic Congestion Visualization Tool
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -120,8 +121,6 @@ The following is a screenshot of the output .HTML file, along with markers that 
 ![Carleton University](images/carleton.png)
 
 ## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
