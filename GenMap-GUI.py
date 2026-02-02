@@ -495,32 +495,16 @@ table = {
     'Nova Scotia':'NS',
     'Nunavut':'NU'
 }
+# key- value implementation for drop down menu
+options = sorted(list(table.values())) 
 
-# Dropdown menu options 
-options = [ 
-    "Alberta",
-    "British Columbia",  
-    "Manitoba",
-    "New Brunswick",
-    "Newfoundland",
-    "Northwest Territories",
-    "Nova Scotia",
-    "Nunavut",
-    "Ontario",
-    "Prince Edward Island",
-    "Quebec", 
-    "Saskatchewan"    
-] 
-  
-# datatype of menu text 
 clicked1 = StringVar(w)
 clicked2 = StringVar(w)
 
-# Create Dropdown menu
-#initialize the selection of the drop down
-p1 = "Alberta"
-p2 = "Alberta"
-drop1 = OptionMenu( w , clicked1,options[0], *options ) 
+p1 = options[0] 
+p2 = options[0]
+
+drop1 = OptionMenu( w , clicked1, options[0], *options ) 
 drop1.place(x = 25, y = 123)
 drop2 = OptionMenu( w , clicked2, options[0], *options ) 
 drop2.place(x = 150, y = 123)
